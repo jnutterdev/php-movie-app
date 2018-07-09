@@ -11,3 +11,6 @@ body {
 .list {
 	border: 1px grey solid;
 }
+table {
+	border: 1px solid #eee;
+}
