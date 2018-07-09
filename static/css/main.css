@@ -1,0 +1,13 @@
+body {
+	background-color: #eee;
+}
+.main-table .one {
+	background: lightblue;
+	margin-top: 20px;
+}
+.two {
+	background: white;
+}
+.list {
+	border: 1px grey solid;
+}
