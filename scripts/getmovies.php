@@ -15,7 +15,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	// output data of each row
 	while ($row = $result->fetch_assoc()) {
-		echo "<li>Title: ".$row["title"]."</li><li>Year: ".$row["year"]."</li><li>Genre: ".$row["genre"]."</li><br>";
+		echo "<tr><td>".$row["title"]."</td><td>".$row["year"]."</td><td>".$row["genre"]."</td></tr>";
 	}
 } else {
 	echo "0 results";

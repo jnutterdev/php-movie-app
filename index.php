@@ -19,14 +19,9 @@
       <p class="subtitle">
         This page is designed to collect and display my movie collections.
       </p>
-
-    <div class="columns is-desktop main-table">
-  		<div class="column one">Movies</div>
-  		<div class="column one">TV</div>
-	</div>
  </div>
   </section>
-  <section class="section two">
+  <article class="section two">
 		<div class="tile">
 		<h2>Movie section</h2>
 		</div>
@@ -52,19 +47,15 @@
 				</div>
 			</div>
 		</form>
-		<div class="columns is-desktop two list">
-			<div class="column one ">Title</div>
-  			<div class="column one">Year</div>
-  			<div class="column one">Genre</div>
-  			<div class="column one">Format</div>
-  			<div class="column one">Location</div>
-		</div>
-    <ul class="columns is-desktop">
-      <div class='column is-desktop'>
+    <table class="table is-striped is-fullwidth">
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Genre</th>
+      </tr>
 <?php include 'scripts/getmovies.php';?>
-    </div>
-    </ul>
-  </section>
+</table>
+  </article>
  <footer class="footer">
   <div class="content has-text-centered">
     <p>
