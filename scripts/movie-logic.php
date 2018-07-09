@@ -24,4 +24,3 @@ VALUES ( '$movie_title',  '$movie_year', '$movie_genre',  '$movie_location', '$m
 }
 
 $conn = null;
-?>

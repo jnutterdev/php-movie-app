@@ -59,6 +59,11 @@
   			<div class="column one">Format</div>
   			<div class="column one">Location</div>
 		</div>
+    <ul class="columns is-desktop">
+      <div class='column is-desktop'>
+<?php include 'scripts/getmovies.php';?>
+    </div>
+    </ul>
   </section>
  <footer class="footer">
   <div class="content has-text-centered">
