@@ -1,4 +1,5 @@
-<?php require 'resources/login.php'?>
+<?php require 'resources/login.php';
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,22 +30,22 @@
 		<div class="tile">
 		<h2>Movie section</h2>
 		</div>
-		<form action="movie-logic.php" method="POST" accept-charset="utf-8">
+		<form action="scripts/movie-logic.php" method="POST" accept-charset="utf-8">
 			<div class="columns">
 				<div class="column">
-					<input class="input" type="text" placeholder="Title">
+					<input class="input" type="text" placeholder="Title" name="movie_title">
 				</div>
 				<div class="column">
-					<input class="input" type="text" placeholder="Year">
+					<input class="input" type="text" placeholder="Year" name="movie_year">
 				</div>
 				<div class="column is-one-fifth">
-					<input class="input" type="text" placeholder="Genre">
+					<input class="input" type="text" placeholder="Genre" name="movie_genre">
 				</div>
 				<div class="column is-one-fifth">
-					<input class="input" type="text" placeholder="Location">
+					<input class="input" type="text" placeholder="Location" name="movie_location">
 				</div>
 				<div class="column is-one-fifth">
-					<input class="input" type="text" placeholder="Format">
+					<input class="input" type="text" placeholder="Format" name="movie_format">
 				</div>
 				<div class="column is-one-fifth">
 					<button class="button">Submit</button>
