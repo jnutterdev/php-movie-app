@@ -1,5 +1,4 @@
-<?php require 'resources/login.php';
-?>
+<?php require 'resources/login.php'?>
 <?php include 'header.php'?>
 <section class="section">
     <div class="container">
@@ -12,38 +11,41 @@
  </div>
   </section>
   <article class="section two">
-		<div class="tile">
-		<h2>Movie section</h2>
-		</div>
+  <div class="container">
 		<form action="scripts/movie-logic.php" method="POST" accept-charset="utf-8">
 			<div class="columns">
+				  <div class="column">
+					   <input class="input" type="text" placeholder="Title" name="movie_title">
+				  </div>
+  				<div class="column is-one-seventh">
+  					<input class="input" type="text" placeholder="Year" name="movie_year">
+  				</div>
+  				<div class="column is-one-seventh">
+  					<input class="input" type="text" placeholder="Genre" name="movie_genre">
+  				</div>
+  				<div class="column is-one-seventh">
+  					<input class="input" type="text" placeholder="Location" name="movie_location">
+  				</div>
+  				<div class="column is-one-seventh">
+  					<input class="input" type="text" placeholder="Format" name="movie_type">
+  				</div>
 				<div class="column">
-					<input class="input" type="text" placeholder="Title" name="movie_title">
-				</div>
-				<div class="column">
-					<input class="input" type="text" placeholder="Year" name="movie_year">
-				</div>
-				<div class="column is-one-fifth">
-					<input class="input" type="text" placeholder="Genre" name="movie_genre">
-				</div>
-				<div class="column is-one-fifth">
-					<input class="input" type="text" placeholder="Location" name="movie_location">
-				</div>
-				<div class="column is-one-fifth">
-					<input class="input" type="text" placeholder="Format" name="movie_format">
-				</div>
-				<div class="column is-one-fifth">
-					<button class="button">Submit</button>
-				</div>
+          <button class="button is-primary">Submit</button>
+        </div>
 			</div>
 		</form>
+  </div>
+    <div class="container">
     <table class="table is-striped is-fullwidth is-hoverable">
       <tr>
         <th>Title</th>
         <th>Year</th>
         <th>Genre</th>
+        <th>Location</th>
+        <th>Type</th>
       </tr>
 <?php include 'scripts/getmovies.php';?>
 </table>
+</div>
   </article>
 <?php include 'footer.php'?>
