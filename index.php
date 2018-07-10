@@ -27,7 +27,7 @@
   					<input class="input" type="text" placeholder="Location" name="movie_location">
   				</div>
   				<div class="column is-one-seventh">
-  					<input class="input" type="text" placeholder="Format" name="movie_type">
+  					<input class="input" type="text" placeholder="Type" name="movie_type">
   				</div>
 				<div class="column">
           <button class="button is-primary">Submit</button>
