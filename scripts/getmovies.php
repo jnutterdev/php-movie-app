@@ -9,7 +9,7 @@ if ($conn->connect_error) {
 	die("Connection failed: ".$conn->connect_error);
 }
 
-$sql    = "SELECT `year`, `title`, `genre`, `location`, `type` FROM `movie_collection` LIMIT 5";
+$sql    = "SELECT `year`, `title`, `genre`, `location`, `type` FROM `movie_collection` ORDER BY id DESC LIMIT 5";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
