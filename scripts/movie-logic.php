@@ -12,8 +12,10 @@ try {
 
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	$sql = "INSERT INTO `movie_collection` ( `title` , `year`, `genre`,  `location`, `type` )
+	if (!empty($_POST[movie_title])) {
+		$sql = "INSERT INTO `movie_collection` ( `title` , `year`, `genre`,  `location`, `type` )
 VALUES ( '$movie_title',  '$movie_year', '$movie_genre',  '$movie_location', '$movie_type' )";
+	}
 
 	$conn->exec($sql);
 
