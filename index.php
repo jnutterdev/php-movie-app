@@ -1,4 +1,4 @@
-<?php require 'resources/login.php'?>
+
 <?php include 'header.php'?>
 <section class="section">
     <div class="container">

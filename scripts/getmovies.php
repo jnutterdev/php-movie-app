@@ -1,6 +1,6 @@
 <?php
 
-require_once '/Users/user/github.com/terribledevice/php-movies/resources/login.php';
+require_once '/Users/user/github.com/terribledevice/php-movie-app/resources/login.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

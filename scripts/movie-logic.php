@@ -1,5 +1,5 @@
 <?php
-require_once '/Users/user/github.com/terribledevice/php-movies/resources/login.php';
+require_once '/Users/user/github.com/terribledevice/php-movie-app/resources/login.php';
 
 $movie_title    = $_POST['movie_title'];
 $movie_year     = $_POST['movie_year'];
