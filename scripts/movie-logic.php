@@ -1,11 +1,11 @@
 <?php
-require_once '/Users/user/github.com/terribledevice/php-movie-app/resources/login.php';
+require_once 'connect.php';
 
-$movie_title    = $_POST['movie_title'];
-$movie_year     = $_POST['movie_year'];
-$movie_genre    = $_POST['movie_genre'];
-$movie_location = $_POST['movie_location'];
-$movie_type     = $_POST['movie_type'];
+$movie_title    = $_POST['title'];
+$movie_year     = $_POST['year'];
+$movie_genre    = $_POST['genre'];
+$movie_location = $_POST['location'];
+$movie_type     = $_POST['format'];
 
 try {
 	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -26,3 +26,5 @@ VALUES ( '$movie_title',  '$movie_year', '$movie_genre',  '$movie_location', '$m
 $conn = null;
 
 header("Location: ../index.php");
+
+?>
