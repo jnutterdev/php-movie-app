@@ -1,5 +1,6 @@
 <?php
 require_once 'connect.php';
+header("location:../index.php");
 
 $movie_title    = $_POST['title'];
 $movie_year     = $_POST['year'];
@@ -12,7 +13,7 @@ try {
 
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	$sql = "INSERT INTO `movie_collection` ( `title` , `year`, `genre`,  `location`, `type` )
+	$sql = "INSERT INTO `all_movies` ( `title` , `year`, `genre`,  `location`, `format` )
 VALUES ( '$movie_title',  '$movie_year', '$movie_genre',  '$movie_location', '$movie_type' )";
 
 	$conn->exec($sql);
@@ -25,6 +26,6 @@ VALUES ( '$movie_title',  '$movie_year', '$movie_genre',  '$movie_location', '$m
 
 $conn = null;
 
-header("Location: ../index.php");
+
 
 ?>

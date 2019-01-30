@@ -15,19 +15,19 @@
 		<form action="scripts/movie-logic.php" method="POST" accept-charset="utf-8">
 			<div class="columns">
 				  <div class="column">
-					   <input class="input" type="text" placeholder="Title" name="movie_title">
+					   <input class="input" type="text" placeholder="Title" name="title">
 				  </div>
   				<div class="column is-one-seventh">
-  					<input class="input" type="text" placeholder="Year" name="movie_year">
+  					<input class="input" type="text" placeholder="Year" name="year">
   				</div>
   				<div class="column is-one-seventh">
-  					<input class="input" type="text" placeholder="Genre" name="movie_genre">
+  					<input class="input" type="text" placeholder="Genre" name="genre">
   				</div>
   				<div class="column is-one-seventh">
-  					<input class="input" type="text" placeholder="Location" name="movie_location">
+  					<input class="input" type="text" placeholder="Location" name="location">
   				</div>
   				<div class="column is-one-seventh">
-  					<input class="input" type="text" placeholder="Type" name="movie_type">
+  					<input class="input" type="text" placeholder="Type" name="format">
   				</div>
 				<div class="column">
           <button class="button is-primary">Submit</button>
