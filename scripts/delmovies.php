@@ -15,7 +15,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	// output data of each row
 	while ($row = $result->fetch_assoc()) {
-		echo "<tr><td>".$row["title"]."</td><td>".$row["year"]."</td><td>".$row["genre"]."</td><td>".$row["location"]."</td><td>".$row["type"]."</td><td><div class='buttons has-addons'><span class='button'><a href='#'>Edit</a></span><span class='button'><a href='#'>Del</span></div></td></tr>";
+		echo "<tr><td>".$row["title"]."</td><td>".$row["year"]."</td><td>".$row["genre"]."</td><td>".$row["location"]."</td><td>".$row["type"]."</td></tr>";
 	}
 } else {
 	echo "0 results";

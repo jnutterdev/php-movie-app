@@ -43,6 +43,7 @@
         <th>Genre</th>
         <th>Location</th>
         <th>Type</th>
+        <th>Options</th>
       </tr>
 <?php include 'scripts/getmovies.php';?>
 </table>
