@@ -47,6 +47,16 @@
       </tr>
 <?php include 'scripts/getmovies.php';?>
 </table>
+<div class="field">
+  <div class="control">
+    <div class="select is-small">
+      <select>
+        <option>25</option>
+        <option>50</option>
+         <option>100</option>
+      </select>
+    </div>
+  </div>
 </div>
   </article>
 <?php include 'footer.php'?>
