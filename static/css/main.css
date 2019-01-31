@@ -17,3 +17,6 @@ table {
 form {
 	margin: 0px 10px 20px 10px;
 }
+.bread-crumbs {
+	text-align: right;
+}
